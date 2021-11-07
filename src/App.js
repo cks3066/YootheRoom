@@ -12,6 +12,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Route path="/" exact component={Home} />
+        <Route path="/YoutheRoom" exact component={Home} />
         <Route path="/test" exact component={Test} />
         <Route path="/result" exact component={Result} />
       </BrowserRouter>
