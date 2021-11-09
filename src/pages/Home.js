@@ -9,7 +9,7 @@ const Home = (props) => {
   };
 
   axios
-    .get("/test", {
+    .get("http://13.125.132.62:5000/test", {
       headers: {
         withCredentials: true,
       },
@@ -18,7 +18,7 @@ const Home = (props) => {
       console.log(res);
     })
     .catch((error) => {
-      console.log(error);
+      console.dir(error);
     });
 
   return (
