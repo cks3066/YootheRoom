@@ -1,6 +1,7 @@
 import React from "react";
 
 import testData from "../testData.json";
+import { kakaoShare } from "../elements/share";
 
 const findResult = (select) => {
   const maxValue = Math.max.apply(null, select);
@@ -23,6 +24,7 @@ const Result = (props) => {
     <>
       <h1>{testData.infoList[result].name}</h1>
       <h3>{testData.infoList[result].desc}</h3>
+      <button onClick={kakaoShare}>공유하기</button>
     </>
   );
 };
