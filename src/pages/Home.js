@@ -5,7 +5,7 @@ import axios from "axios";
 const Home = (props) => {
   const history = useHistory();
   const onClick = () => {
-    history.push("YoutheRoom/test");
+    history.push("/test");
   };
 
   axios

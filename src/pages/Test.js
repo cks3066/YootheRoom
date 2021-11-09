@@ -14,7 +14,7 @@ const Test = (props) => {
     if (step < 11) setStep(step + 1);
     else if (step === 11) {
       history.push({
-        pathname: "result",
+        pathname: "/result",
         state: { select: select },
       });
     }
