@@ -12,6 +12,7 @@ const Home = (props) => {
     .get("http://13.125.132.62:5000/test", {
       headers: {
         withCredentials: true,
+        "Access-Control-Allow-Origin": "*",
       },
     })
     .then((res) => {
@@ -23,7 +24,7 @@ const Home = (props) => {
 
   return (
     <>
-      <div>here's home</div>
+      <div>here's home_ver 0.1</div>
       <button onClick={onClick}>Go to Test</button>
     </>
   );
