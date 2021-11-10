@@ -1,7 +1,11 @@
 import React from "react";
-
+import Toast from "../elements/Toast";
 import testData from "../testData.json";
-import { kakaoShare } from "../elements/share";
+import { kakaoShare, twitterShare, facebookShare } from "../elements/share";
+import facebook from "../images/facebook.png";
+import kakao from "../images/kakao.png";
+import twitter from "../images/twitter.png";
+import link from "../images/link.png";
 
 const findResult = (select) => {
   const maxValue = Math.max.apply(null, select);
@@ -16,33 +20,127 @@ const findResult = (select) => {
   return result;
 };
 
+const copyToClipboard = (val) => {
+  const t = document.createElement("textarea");
+  document.body.appendChild(t);
+  t.value = val;
+  t.select();
+  document.execCommand("copy");
+  document.body.removeChild(t);
+};
+
+const copy = (func) => {
+  copyToClipboard("https://cks3066.github.io/YoutheRoom/");
+  func("complete");
+};
+
 const Result = (props) => {
   const { select } = props.location.state;
   const result = findResult(select);
+  const [ToastStatus, setToastStatus] = React.useState(false);
+  const ToastMsg = "클리보드에 URL이 복사되었습니다.";
+
+  const handleToast = () => {
+    if (!ToastStatus) {
+      setToastStatus(true);
+    }
+  };
+
+  React.useEffect(() => {
+    if (ToastStatus) {
+      setTimeout(() => {
+        setToastStatus(false);
+      }, 1000);
+    }
+  }, [ToastStatus]);
 
   return (
     <>
-      <h1>{testData.infoList[result].name}</h1>
-      <h3>{testData.infoList[result].desc}</h3>
-      <button onClick={kakaoShare}>공유하기</button>
+      <h1 id="resultTitle">진로단계 결과</h1>
+      <div id="resultSimple">{testData.infoList[result].name}</div>
+      <img
+        src="https://source.unsplash.com/random"
+        alt="img"
+        width="310px"
+        height="230px"
+      ></img>
+      <div id="resultMain_Title">{testData.infoList[result].name}</div>
+      <div id="resultMain">{testData.infoList[result].desc}</div>
+
+      <div id="resultProgramTitle">나와 맞는 프로그램은?</div>
+      <div class="resultPrograms">
+        <p id="programName">프로그램 이름</p>
+        <p id="programDetail">프로그램 설명 어쩌구 저쩌구</p>
+      </div>
+      <div class="resultPrograms">
+        <p id="programName">프로그램 이름</p>
+        <p id="programDetail">프로그램 설명 어쩌구 저쩌구</p>
+      </div>
+      <div class="resultPrograms">
+        <p id="programName">프로그램 이름</p>
+        <p id="programDetail">프로그램 설명 어쩌구 저쩌구</p>
+      </div>
+      <div id="moreProgram">
+        <p>나와 맞는 프로그램 더 보기</p>
+      </div>
+      <img
+        src="https://source.unsplash.com/random"
+        alt="img"
+        width="310px"
+        height="230px"
+      ></img>
+
+      <div id="resultShare">결과 공유하기</div>
+      <div id="shareContainer">
+        <img
+          class="shareIcon"
+          src={kakao}
+          alt="kakaotalk"
+          width="64px"
+          height="64px"
+          onClick={kakaoShare}
+        />
+
+        <img
+          class="shareIcon"
+          src={facebook}
+          alt="facebook"
+          width="64px"
+          height="64px"
+          onClick={facebookShare}
+        ></img>
+
+        <img
+          class="shareIcon"
+          src={twitter}
+          alt="twitter"
+          width="64px"
+          height="64px"
+          onClick={twitterShare}
+        ></img>
+        <input type="hidden" id="urlInput" class="url-input" />
+
+        <img
+          class="shareIcon"
+          src={link}
+          alt="link"
+          width="64px"
+          height="64px"
+          onClick={() => {
+            copy(handleToast);
+          }}
+        ></img>
+        {ToastStatus && (
+          <>
+            <Toast msg={ToastMsg} />
+          </>
+        )}
+      </div>
+
+      <button id="homeStartBtn">다시하기</button>
+      <button id="homeStartBtn">전체 유형 보기</button>
     </>
   );
 };
 
 export default Result;
-
-/*
-Result
-mouse,0
-cow,1
-tiger,2
-rabbit,3
-dragon,4
-snake,5
-horse,6
-sheep,7
-monkey,8
-chick,9
-dog,10
-pig,11
-*/

@@ -27,31 +27,32 @@ const Test = (props) => {
 
   return (
     <>
-      <ProgressBar width={800} percent={step / 12} />
-      <h1>{testData.qnaList[step].q}</h1>
+      <ProgressBar width={300} percent={step / 12} />
+      <h1 id="testQuestionNum">Q{step + 1}.</h1>
+      <h1 id="testQuestion">{testData.qnaList[step].q}</h1>
       <div
-        id="answer"
+        class="testAnswer"
         onClick={() => {
           onClick(0);
         }}
       >
-        {testData.qnaList[step].a[0].answer}
+        <p class="testAnswerP">{testData.qnaList[step].a[0].answer}</p>
       </div>
       <div
-        id="answer"
+        class="testAnswer"
         onClick={() => {
           onClick(1);
         }}
       >
-        {testData.qnaList[step].a[1].answer}
+        <p class="testAnswerP">{testData.qnaList[step].a[1].answer}</p>
       </div>
       <div
-        id="answer"
+        class="testAnswer"
         onClick={() => {
           onClick(2);
         }}
       >
-        {testData.qnaList[step].a[2].answer}
+        <p class="testAnswerP">{testData.qnaList[step].a[2].answer}</p>
       </div>
     </>
   );
