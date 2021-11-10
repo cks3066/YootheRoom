@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/YoutheRoom/static/css/main.3aed55c3.chunk.css",
-    "main.js": "/YoutheRoom/static/js/main.082b0fd8.chunk.js",
-    "main.js.map": "/YoutheRoom/static/js/main.082b0fd8.chunk.js.map",
+    "main.js": "/YoutheRoom/static/js/main.77acf4d9.chunk.js",
+    "main.js.map": "/YoutheRoom/static/js/main.77acf4d9.chunk.js.map",
     "runtime-main.js": "/YoutheRoom/static/js/runtime-main.58e647b9.js",
     "runtime-main.js.map": "/YoutheRoom/static/js/runtime-main.58e647b9.js.map",
     "static/js/2.b833e2ca.chunk.js": "/YoutheRoom/static/js/2.b833e2ca.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.58e647b9.js",
     "static/js/2.b833e2ca.chunk.js",
     "static/css/main.3aed55c3.chunk.css",
-    "static/js/main.082b0fd8.chunk.js"
+    "static/js/main.77acf4d9.chunk.js"
   ]
 }
