@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/YoutheRoom/static/css/main.969d7bb3.chunk.css",
-    "main.js": "/YoutheRoom/static/js/main.53d1c6ad.chunk.js",
-    "main.js.map": "/YoutheRoom/static/js/main.53d1c6ad.chunk.js.map",
-    "runtime-main.js": "/YoutheRoom/static/js/runtime-main.58e647b9.js",
-    "runtime-main.js.map": "/YoutheRoom/static/js/runtime-main.58e647b9.js.map",
-    "static/js/2.f0ec14e3.chunk.js": "/YoutheRoom/static/js/2.f0ec14e3.chunk.js",
-    "static/js/2.f0ec14e3.chunk.js.map": "/YoutheRoom/static/js/2.f0ec14e3.chunk.js.map",
-    "index.html": "/YoutheRoom/index.html",
-    "static/css/main.969d7bb3.chunk.css.map": "/YoutheRoom/static/css/main.969d7bb3.chunk.css.map",
-    "static/js/2.f0ec14e3.chunk.js.LICENSE.txt": "/YoutheRoom/static/js/2.f0ec14e3.chunk.js.LICENSE.txt",
-    "static/media/facebook.4f037d96.png": "/YoutheRoom/static/media/facebook.4f037d96.png",
-    "static/media/kakao.6af80cbc.png": "/YoutheRoom/static/media/kakao.6af80cbc.png",
-    "static/media/link.1abb6f17.png": "/YoutheRoom/static/media/link.1abb6f17.png",
-    "static/media/twitter.28b4dce4.png": "/YoutheRoom/static/media/twitter.28b4dce4.png"
+    "main.css": "/catchup.shop/static/css/main.13f7009d.chunk.css",
+    "main.js": "/catchup.shop/static/js/main.6a1fdf64.chunk.js",
+    "main.js.map": "/catchup.shop/static/js/main.6a1fdf64.chunk.js.map",
+    "runtime-main.js": "/catchup.shop/static/js/runtime-main.677188d5.js",
+    "runtime-main.js.map": "/catchup.shop/static/js/runtime-main.677188d5.js.map",
+    "static/js/2.f0ec14e3.chunk.js": "/catchup.shop/static/js/2.f0ec14e3.chunk.js",
+    "static/js/2.f0ec14e3.chunk.js.map": "/catchup.shop/static/js/2.f0ec14e3.chunk.js.map",
+    "index.html": "/catchup.shop/index.html",
+    "static/css/main.13f7009d.chunk.css.map": "/catchup.shop/static/css/main.13f7009d.chunk.css.map",
+    "static/js/2.f0ec14e3.chunk.js.LICENSE.txt": "/catchup.shop/static/js/2.f0ec14e3.chunk.js.LICENSE.txt",
+    "static/media/facebook.4f037d96.png": "/catchup.shop/static/media/facebook.4f037d96.png",
+    "static/media/kakao.6af80cbc.png": "/catchup.shop/static/media/kakao.6af80cbc.png",
+    "static/media/link.1abb6f17.png": "/catchup.shop/static/media/link.1abb6f17.png",
+    "static/media/twitter.28b4dce4.png": "/catchup.shop/static/media/twitter.28b4dce4.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.58e647b9.js",
+    "static/js/runtime-main.677188d5.js",
     "static/js/2.f0ec14e3.chunk.js",
-    "static/css/main.969d7bb3.chunk.css",
-    "static/js/main.53d1c6ad.chunk.js"
+    "static/css/main.13f7009d.chunk.css",
+    "static/js/main.6a1fdf64.chunk.js"
   ]
 }
