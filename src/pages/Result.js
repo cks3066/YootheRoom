@@ -43,9 +43,6 @@ const Result = (props) => {
   } else {
     select = props.location.state.select;
   }
-  if (select === null) {
-    history.push("/");
-  }
   const result = findResult(select);
   const [ToastStatus, setToastStatus] = React.useState(false);
   const ToastMsg = "클리보드에 URL이 복사되었습니다.";
