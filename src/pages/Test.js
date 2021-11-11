@@ -27,7 +27,7 @@ const Test = (props) => {
 
   return (
     <>
-      <ProgressBar width={300} percent={step / 12} />
+      <ProgressBar width={300} percent={step / 11} />
       <h1 id="testQuestionNum">Q{step + 1}.</h1>
       <h1 id="testQuestion">{testData.qnaList[step].q}</h1>
       <div

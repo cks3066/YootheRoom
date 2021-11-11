@@ -25,7 +25,7 @@ const Home = (props) => {
   return (
     <>
       <div>간단한 테스트 설명</div>
-      <div id="homeTitle">테스트 제목</div>
+      <div id="homeTitle">MDTI 테스트</div>
       <img
         id="homeImg"
         src="https://source.unsplash.com/random"
