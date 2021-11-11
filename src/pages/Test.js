@@ -36,7 +36,7 @@ const Test = (props) => {
           onClick(0);
         }}
       >
-        <p class="testAnswerP">{testData.qnaList[step].a[0].answer}</p>
+        <div class="testAnswerP">{testData.qnaList[step].a[0].answer}</div>
       </div>
       <div
         class="testAnswer"
@@ -44,7 +44,7 @@ const Test = (props) => {
           onClick(1);
         }}
       >
-        <p class="testAnswerP">{testData.qnaList[step].a[1].answer}</p>
+        <div class="testAnswerP">{testData.qnaList[step].a[1].answer}</div>
       </div>
       <div
         class="testAnswer"
@@ -52,7 +52,7 @@ const Test = (props) => {
           onClick(2);
         }}
       >
-        <p class="testAnswerP">{testData.qnaList[step].a[2].answer}</p>
+        <div class="testAnswerP">{testData.qnaList[step].a[2].answer}</div>
       </div>
     </>
   );

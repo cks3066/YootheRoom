@@ -6,6 +6,7 @@ import facebook from "../images/facebook.png";
 import kakao from "../images/kakao.png";
 import twitter from "../images/twitter.png";
 import link from "../images/link.png";
+import { useHistory } from "react-router-dom";
 
 const findResult = (select) => {
   const maxValue = Math.max.apply(null, select);
@@ -35,7 +36,16 @@ const copy = (func) => {
 };
 
 const Result = (props) => {
-  const { select } = props.location.state;
+  var select = null;
+  const history = useHistory();
+  if (props.location.state === undefined) {
+    history.push("/");
+  } else {
+    select = props.location.state.select;
+  }
+  if (select === null) {
+    history.push("/");
+  }
   const result = findResult(select);
   const [ToastStatus, setToastStatus] = React.useState(false);
   const ToastMsg = "클리보드에 URL이 복사되었습니다.";
@@ -96,8 +106,8 @@ const Result = (props) => {
           class="shareIcon"
           src={kakao}
           alt="kakaotalk"
-          width="64px"
-          height="64px"
+          width="65px"
+          height="65px"
           onClick={kakaoShare}
         />
 
@@ -105,8 +115,8 @@ const Result = (props) => {
           class="shareIcon"
           src={facebook}
           alt="facebook"
-          width="64px"
-          height="64px"
+          width="65px"
+          height="65px"
           onClick={facebookShare}
         ></img>
 
@@ -114,8 +124,8 @@ const Result = (props) => {
           class="shareIcon"
           src={twitter}
           alt="twitter"
-          width="64px"
-          height="64px"
+          width="65px"
+          height="65px"
           onClick={twitterShare}
         ></img>
         <input type="hidden" id="urlInput" class="url-input" />
@@ -124,8 +134,8 @@ const Result = (props) => {
           class="shareIcon"
           src={link}
           alt="link"
-          width="64px"
-          height="64px"
+          width="65px"
+          height="65px"
           onClick={() => {
             copy(handleToast);
           }}
@@ -137,8 +147,12 @@ const Result = (props) => {
         )}
       </div>
 
-      <button id="homeStartBtn">다시하기</button>
-      <button id="homeStartBtn">전체 유형 보기</button>
+      <div id="resultBtnContainer">
+        <button id="resultRetry">다시하기</button>
+        <button id="resultAll">전체 유형 보기</button>
+      </div>
+      {/* <button id="resultRetryBtn">다시하기</button>
+      <button id="resultShowAll">전체 유형 보기</button> */}
     </>
   );
 };
