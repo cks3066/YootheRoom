@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/YoutheRoom/static/css/main.c12ae29f.chunk.css",
-    "main.js": "/YoutheRoom/static/js/main.a7dc8e8a.chunk.js",
-    "main.js.map": "/YoutheRoom/static/js/main.a7dc8e8a.chunk.js.map",
+    "main.css": "/YoutheRoom/static/css/main.969d7bb3.chunk.css",
+    "main.js": "/YoutheRoom/static/js/main.53d1c6ad.chunk.js",
+    "main.js.map": "/YoutheRoom/static/js/main.53d1c6ad.chunk.js.map",
     "runtime-main.js": "/YoutheRoom/static/js/runtime-main.58e647b9.js",
     "runtime-main.js.map": "/YoutheRoom/static/js/runtime-main.58e647b9.js.map",
     "static/js/2.f0ec14e3.chunk.js": "/YoutheRoom/static/js/2.f0ec14e3.chunk.js",
     "static/js/2.f0ec14e3.chunk.js.map": "/YoutheRoom/static/js/2.f0ec14e3.chunk.js.map",
     "index.html": "/YoutheRoom/index.html",
-    "static/css/main.c12ae29f.chunk.css.map": "/YoutheRoom/static/css/main.c12ae29f.chunk.css.map",
+    "static/css/main.969d7bb3.chunk.css.map": "/YoutheRoom/static/css/main.969d7bb3.chunk.css.map",
     "static/js/2.f0ec14e3.chunk.js.LICENSE.txt": "/YoutheRoom/static/js/2.f0ec14e3.chunk.js.LICENSE.txt",
     "static/media/facebook.4f037d96.png": "/YoutheRoom/static/media/facebook.4f037d96.png",
     "static/media/kakao.6af80cbc.png": "/YoutheRoom/static/media/kakao.6af80cbc.png",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.58e647b9.js",
     "static/js/2.f0ec14e3.chunk.js",
-    "static/css/main.c12ae29f.chunk.css",
-    "static/js/main.a7dc8e8a.chunk.js"
+    "static/css/main.969d7bb3.chunk.css",
+    "static/js/main.53d1c6ad.chunk.js"
   ]
 }
