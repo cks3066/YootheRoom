@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/YoutheRoom/static/css/main.13f7009d.chunk.css",
-    "main.js": "/YoutheRoom/static/js/main.87b6e4d8.chunk.js",
-    "main.js.map": "/YoutheRoom/static/js/main.87b6e4d8.chunk.js.map",
+    "main.css": "/YoutheRoom/static/css/main.6f9edf1c.chunk.css",
+    "main.js": "/YoutheRoom/static/js/main.dd19e665.chunk.js",
+    "main.js.map": "/YoutheRoom/static/js/main.dd19e665.chunk.js.map",
     "runtime-main.js": "/YoutheRoom/static/js/runtime-main.58e647b9.js",
     "runtime-main.js.map": "/YoutheRoom/static/js/runtime-main.58e647b9.js.map",
-    "static/js/2.16d94e88.chunk.js": "/YoutheRoom/static/js/2.16d94e88.chunk.js",
-    "static/js/2.16d94e88.chunk.js.map": "/YoutheRoom/static/js/2.16d94e88.chunk.js.map",
+    "static/js/2.ad757d31.chunk.js": "/YoutheRoom/static/js/2.ad757d31.chunk.js",
+    "static/js/2.ad757d31.chunk.js.map": "/YoutheRoom/static/js/2.ad757d31.chunk.js.map",
     "index.html": "/YoutheRoom/index.html",
-    "static/css/main.13f7009d.chunk.css.map": "/YoutheRoom/static/css/main.13f7009d.chunk.css.map",
-    "static/js/2.16d94e88.chunk.js.LICENSE.txt": "/YoutheRoom/static/js/2.16d94e88.chunk.js.LICENSE.txt",
+    "static/css/main.6f9edf1c.chunk.css.map": "/YoutheRoom/static/css/main.6f9edf1c.chunk.css.map",
+    "static/js/2.ad757d31.chunk.js.LICENSE.txt": "/YoutheRoom/static/js/2.ad757d31.chunk.js.LICENSE.txt",
     "static/media/facebook.4f037d96.png": "/YoutheRoom/static/media/facebook.4f037d96.png",
     "static/media/kakao.6af80cbc.png": "/YoutheRoom/static/media/kakao.6af80cbc.png",
     "static/media/link.1abb6f17.png": "/YoutheRoom/static/media/link.1abb6f17.png",
@@ -17,8 +17,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.58e647b9.js",
-    "static/js/2.16d94e88.chunk.js",
-    "static/css/main.13f7009d.chunk.css",
-    "static/js/main.87b6e4d8.chunk.js"
+    "static/js/2.ad757d31.chunk.js",
+    "static/css/main.6f9edf1c.chunk.css",
+    "static/js/main.dd19e665.chunk.js"
   ]
 }
