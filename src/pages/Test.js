@@ -20,8 +20,10 @@ const Test = (props) => {
     }
 
     const { type } = testData.qnaList[step].a[num];
+    // eslint-disable-next-line array-callback-return
     type.map((item) => {
       select[item]++;
+      return item;
     });
   };
 
